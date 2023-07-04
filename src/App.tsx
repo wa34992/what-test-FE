@@ -6,7 +6,10 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-// import { Provider } from 'react-redux'
+import Product from './Pages/product';
+
+import { Provider } from 'react-redux'
+// import { store } from './reduxStore/store';
 
 function App() {
   return (
@@ -14,9 +17,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/product" element={<Product />} />
+          {/* <Route path="/users/*" element={<UserApp />} /> */}
         </Routes>
       </BrowserRouter>
-  
 
   )
 }
